@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lobster&family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lobster&family=Love+Ya+Like+A+Sister&family=Plus+Jakarta+Sans&display=swap');
+
+h1 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 50px;
+}
+header , footer {
+    padding-right:10px;
+    text-align: right;
+}
+.head {
+    display:inline;
+}
+
+header > .head {
+    vertical-align: top;
+}
+
+header > img, footer > img {
+    width: 120px;
+}
+
+body {
+    font-size:larger;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    background-image: url('./photos/background.jpg');
+    background-size: cover;
+}
+
+div.transbox {
+    border-radius: 25px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid black;
+}
+
+div.transbox h1 {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+
+input {
+    padding-left: 1%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-radius: 25px;
+    border: none;
+    font-size: large;
+    background-color:rgb(250, 230, 152);
+}
+
+form {
+    display:none;
+}
+
+form > input {
+    padding-right:2%;
+}
+
+.center {
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+td {
+    padding: 10px;
+}
+
+table, th, td {
+    border:2px solid;
+}
+
+table {
+    margin-bottom:10%;
+}
+
+.car {
+    width: 400px;
+}
+
+div.thin {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}

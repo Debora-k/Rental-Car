@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dodgy Brakes Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body> 
+<div class="transbox">
+    <h1>Dodgy Brakes Car Rental</h1>
+    <br>
+    <br>
+    <br>
+    <h3>Search by last name</h3>
+    <input type="text" onkeyup="lastnamechanged()" id="lastname"><br>
+
+    <br>
+    <br>
+    <div id="records"></div>
+
+
+        <form>
+            <h3>Car Rental Form</h3>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            <label for="state">State / Province</label><br>
+            <input type="text" id="state" name="state"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" size="30"><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" id="phone" name="phone">
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- ALL of the photos of references are from "http://www.unsplash.com" -->
+        <h3>The Rental Choices</h3>
+        <label for="compact">Compact $15/day</label><br>
+        <input type="radio" id="compact" name="car" onchange="calFunction()"><br>
+        <img class="car" src="./photos/compact.jpg" alt="Compact car"><br>
+        <br>
+        <br>
+        <label for="mid">Mid-size $20/day</label><br>
+        <input type="radio" id="mid" name="car" onchange="calFunction()"><br>
+        <img class="car" src="./photos/mid-size.jpg" alt="Mid-size car"><br>
+        <br>
+        <br>
+        <label for="luxury">Luxury $35/day</label><br>
+        <input type="radio" id="luxury" name="car" onchange="calFunction()"><br>
+        <img class="car" src="./photos/luxury.jpg" alt="Luxury car"><br>
+        <br>
+        <br>
+        <label for="van">Van/Truck $40/day</label><br>
+        <input type="radio" id="van" name="car" onchange="calFunction()"><br>
+        <img class="car" src="./photos/van.jpg" alt="Van"><br>
+        <br>
+        <br>
+        <br>
+
+        <h3>Options</h3>
+            <label for="rack">Roof Rack or Bicycle Rack extra $5/day</label>
+            <input onchange="calFunction()" type="checkbox" id="rack" name="rack"><br>
+            <label for="gps">GPS extra $10</label>
+            <input onchange="calFunction()" type="checkbox" id="gps" name="gps"><br>
+            <label for="seat">Child Seat free</label>
+            <input onchange="calFunction()" type="checkbox" id="seat" name="seat"><br>
+        <br>
+        <br>
+        <br>
+        <h3>How many days would you like to rent it out?</h3>
+        <input type="number" id="days" name="days" min="1" max="30" value="1" onkeyup="calFunction()" onchange="calFunction()"><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class ="thin transbox">
+            <br>
+            Your Selection: <span id="total"></span>
+        </div>
+        </form>
+        <footer>
+            <div class="head" id="displayDate2"></div>
+            <img src="./photos/logo.png" alt="logo">
+        </footer>
+</div>
+
+<script src="index.js"></script>
+<script src="rental.js"></script>
+
+</body>
+</html>
